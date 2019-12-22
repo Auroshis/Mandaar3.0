@@ -1,0 +1,55 @@
+{% extends 'dashboard/layout.html' %}
+
+
+{% block head %}
+<title>Profile</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Student Grades</h1>
+    <h4>Student Id: {{ user }}</h4>
+    <!--<p>Website: {{ user.userprofile.website }}</p>
+    {% if user.userprofile.image %}
+    <img src="{{ user.userprofile.image.url }}" width="240">
+    {% endif %}-->
+</div>
+<table id="t01">
+    <tr>
+      <th>Subject</th>
+      <th>Internal Marks</th> 
+      <th>Final Marks</th>
+    </tr>
+    <tr>
+      <td>{{sub1}}</td>
+      <td>{{internal1}}</td>
+      <td>{{final1}}</td>
+    </tr>
+    <tr>
+        <td>{{sub2}}</td>
+        <td>{{internal2}}</td>
+        <td>{{final2}}</td>
+    </tr>
+    <tr>
+        <td>{{sub3}}</td>
+        <td>{{internal3}}</td>
+        <td>{{final3}}</td>
+    </tr>
+    <tr>
+        <td>{{sub4}}</td>
+        <td>{{internal4}}</td>
+        <td>{{final4}}</td>
+    </tr>
+    <tr>
+        <td>{{sub5}}</td>
+        <td>{{internal5}}</td>
+        <td>{{final5}}</td>
+    </tr>
+    <tr>
+        <td>{{sub6}}</td>
+        <td>{{internal6}}</td>
+        <td>{{final6}}</td>
+    </tr>
+  </table>
+  
+{% endblock %}

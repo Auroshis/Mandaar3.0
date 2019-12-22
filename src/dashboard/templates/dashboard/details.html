@@ -1,0 +1,16 @@
+{% extends 'dashboard/layout.html' %}
+
+{% block body %}
+  <h3 class="center-align red lighten-3">{{notice_body.title}}</h3>
+  <div class="card">
+    <div class="card-content">
+      {{notice_body.body}}
+      <br>
+      Posted by-{{notice_body.Author}}
+    </div>
+    <div class="card-action">
+      {{notice_body.date}}
+    </div>
+  </div>
+<a href="/dashboard/" class="btn">Go Back</a>
+{% endblock %}

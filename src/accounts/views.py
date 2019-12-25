@@ -23,7 +23,7 @@ from django.contrib.auth import (
 )
 
 from .forms import UserLoginForm, UserRegisterForm
-uniqueid=''
+uniqueid=0
 
 def login_view(request):
     global uniqueid

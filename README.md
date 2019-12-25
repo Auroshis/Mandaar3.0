@@ -17,4 +17,4 @@ This lite version contains the following features:
 *Notice details of each notice on clicking on the respective notice
 
 Screenshots are attached for reference.
-Feel free to suggrest changes.
+Feel free to suggest changes.

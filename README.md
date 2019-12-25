@@ -16,5 +16,8 @@ This lite version contains the following features:
 *NoticeBoard
 *Notice details of each notice on clicking on the respective notice
 
+UPDATE:-
+*Student id search feature added.
+
 Screenshots are attached for reference.
 Feel free to suggest changes.

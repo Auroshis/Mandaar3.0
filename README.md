@@ -18,6 +18,7 @@ This lite version contains the following features:
 
 UPDATE:-
 *Student id search feature added.
+*Night Mode added
 
 Screenshots are attached for reference.
 Feel free to suggest changes.

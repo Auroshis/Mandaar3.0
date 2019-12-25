@@ -2,10 +2,12 @@
 from django.urls import path
 from accounts import views
 #from django.contrib.auth.views import LoginView, LogoutView, register_view
-from accounts.views import login_view, register_view, logout_view, view_profile, view_attendance
+from accounts.views import login_view, register_view, logout_view, view_profile, view_attendance, view_search, view_searchresult
 app_name="accounts"
 
 urlpatterns = [
+    path('search/',views.view_search, name='search'),
+    path('search_results/',views.view_searchresult, name='search_results'),
     path('profile/', views.view_profile, name='profile'),
     path('Attendance/', views.view_attendance, name='attendance'),
     path('grades/', views.view_grades, name='grades'),

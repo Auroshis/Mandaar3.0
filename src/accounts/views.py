@@ -23,7 +23,7 @@ from django.contrib.auth import (
 )
 
 from .forms import UserLoginForm, UserRegisterForm
-uniqueid=0
+uniqueid=''
 
 def login_view(request):
     global uniqueid
@@ -159,3 +159,18 @@ def view_grades(request):
 
     return render(request, 'accounts/grades.html', marks)
 
+def view_search(request):
+    return render(request, 'accounts/searchbar.html')
+
+def view_searchresult(request):
+    studentid = ''
+    studentid = request.GET.get('search')#contains the student id
+    print('this is the student id', studentid)
+    idstudent = User.objects.get(username=studentid)
+    studentfkey = idstudent.id
+    userprofile = UserProfile.objects.get(user_id = studentfkey)
+    args = {'userprofile':userprofile,
+    'studentid': studentid}
+    return render(request, 'accounts/searchprofile.html', args)
+
+    

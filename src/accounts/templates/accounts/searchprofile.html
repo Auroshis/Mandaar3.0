@@ -6,19 +6,18 @@
 {% endblock %}
 
 {% block body %}
+
 <div class="container">
-    <h1>Student Attendance</h1>
-    <h4>Student Id: {{ user }}</h4>
-    <p>{{ sub1 }}: {{ attn_sub1 }} %</p>
-    <p>{{ sub2 }}: {{ attn_sub2 }} %</p>
-    <p>{{ sub3 }}: {{ attn_sub3 }} %</p>
-    <p>{{ sub4 }}: {{ attn_sub4 }} %</p>
-    <p>{{ sub5 }}: {{ attn_sub5 }} %</p>
-    <p>{{ sub6 }}: {{ attn_sub6 }} %</p>
+    <h1>Student Profile</h1>
+    <h4>Student Id: {{ studentid }}</h4>
+    <p>Name: {{ userprofile.student_name }}</p>
+    <p>Email: {{ userprofile.mail }}</p>
+    <p>Branch: {{ userprofile.branch }}</p>
+    <p>CGPA: {{ userprofile.cgpa }}</p>
+    <p>Phone: {{ userprofile.phone }}</p>
     <!--<p>Website: {{ user.userprofile.website }}</p>
     {% if user.userprofile.image %}
     <img src="{{ user.userprofile.image.url }}" width="240">
     {% endif %}-->
 </div>
-
 {% endblock %}

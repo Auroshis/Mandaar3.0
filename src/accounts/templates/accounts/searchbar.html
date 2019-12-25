@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>Student Search</h1>
+    <p>
+        Please type the ID of the student you want to search.
+    </p>
+    <form action="{% url 'accounts:search_results' %}" method="get">
+        {% csrf_token %}
+        <label for="search"><b>Search</b></label>
+        <input type="text" placeholder="Enter the Student ID" name="search" required>
+
+        <button type="submit">Search</button>
+    </form>
+</div>
+{% endblock %}

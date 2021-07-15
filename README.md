@@ -1,5 +1,5 @@
 # Mandaar3.0
-This is an attempt to revamp our buggy college website.
+This is an attempt to emulate my college website (for learning purposes only)
 Technology Stack used:-
 *Django 3.0
 *HTML 
